@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: black;
+    --white: #ffffff;
+    --brown1: #1f1714;
+    --brown2: #47352C;
+    --brown3: #92664D;
+    --brown4: #C2B29E;
+    --brown5: #E8E1D9;
+    --brown6: #EFEAE5;
+    --orange1: #913022;
+    --orange2: #D35643;
+    --orange3: #E7A298;
+}
+body{
+    scroll-behavior: smooth;
+    position: relative;
+}
+body .arrow-up{
+    position: fixed;
+    width: 50px;
+    top: 82%;
+    left: 80%;
+}
+
+
+header{
+    background-color: var(--brown1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8%;
+    padding: 20px;
+    height: 14vh;
+}
+
+header nav ul .here img{
+    width: 65px;
+    align-self: center;
+    border-color: var(--white);
+    color: var(--white);
+}
+header nav ul .here a:hover{
+    border: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    color:  var(--white);
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: var(--orange3);
+    background-color: transparent;
+    border: 1px solid var(--orange2);
+    border-radius: 8px;
+    padding: 11px;
+    transition: .5s;
+}
+
+#click .here > a > img{
+    width: 30px;
+}
+main{ 
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--brown6);
+    height: 110vh;
+}
+main img{
+    border-radius: 10px;
+    width: 53%;
+}
+main h1{
+    font-family: Constantia;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: var(--orange2);
+    letter-spacing: 16px;
+    font-weight: bold;
+}
+main p{
+    margin-top: 18px;
+    font-size: 21px;
+    font-weight: normal;
+    font-family: Tahoma;
+}
+main button{
+    margin-top: 3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 60%;
+    color: var(--white);
+    font-weight: 700;
+    padding: 18px;
+    background-color: var(--orange1);
+}
+main button:nth-child(2){
+    margin-left: .5em;
+    width: 35%;
+    background-color: var(--brown1);
+}
+aside{
+    background-color: var(--brown5);
+    padding: 50px 50px 90px 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+aside h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    padding: 12px;
+    color: var(--orange2);
+    font-weight: bold;
+    font-family: tahoma;
+}
+aside .service{
+    display: flex;
+    justify-content: stretch;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 18px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+aside .services{
+    text-align: center;
+    width: 380px;
+    border-radius: 10px;
+    padding: 48px 38px;
+    background-color: var(--brown6);
+}
+aside .services h1{
+    font-size: 28px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    font-family: serif;
+}
+aside .services p{
+    font-size: 21px;
+    text-align: center;
+}
+aside .services h1{
+    font-weight: 400;
+    padding: 10px 0;
+}
+.book{
+    margin-top: 2em;
+    padding: 18px;
+    width: 40vh;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: var(--orange2);
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+
+}
+section{
+    padding: 50px 50px 120px 50px;
+    background-color: var(--brown6);
+    text-align: center;
+    position: relative;
+}
+section h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 18px;
+    color: var(--orange2);
+}
+section p{
+    font-size: 21px;
+}
+
+section .weeks{
+    margin-top: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section .weeks h1{
+    font-size: 38px;
+    color: var(--brown3);
+}
+section .weeks p{
+    margin-top: -20px;
+    font-size: 17px;
+}
+section .mon, .tue, .wed, .thu, .fri, .sat, .sun, .another{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    padding: 60px;
+    align-items: center;
+    background-color: var(--brown5);
+    text-align: center;
+}
+article .article{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+article h1{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--orange2);
+    font-family:' Tahoma', Geneva, Verdana, sans-serif;
+}
+article .price{
+    padding: 50px 25px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+}
+article .price h1{
+    letter-spacing: 4px;
+    color: var(--brown3);
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Javanese Text;
+}
+article .price p{
+    margin-top: 8px;
+    font-family: algerian;
+    font-weight: 700;
+    color: var(--brown1);
+}
+article .price span{
+    font-family: Bahnschrift Light;
+    transform: rotate(180deg);
+}
+figure{
+    padding: 60px;
+    background-color: var(--brown6);
+}
+figure h1{
+    color: var(--orange2);
+    font-family: 'verdana', Vineta BT;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 14px;
+    font-weight: bold;
+}
+figure p{
+    color: var(--brown2);
+    text-align: center;
+    font-size: 21px;
+    padding: 8px 0 38px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+form .space{
+    margin: 3em 1em;
+}
+form .space label{
+    font-size: 21px;
+    font-weight: bolder;
+    padding: 2em 0 20em 0;
+    color: var(--brown2);
+}
+form .space input, select{
+    margin: 1em 0;
+    border: none;
+    width: 25em;
+    padding: 1.5em;
+    height: 3em;
+    border-radius: 8px;
+}
+form .space select{
+    color: var(--brown1);
+    width: 22.6em;
+}
+form input{
+    height: 8em;
+    font-size: 18px;
+}
+form select option{
+    font-weight: 600;
+    border: none;
+    padding: 20px;  
+    color: var(--brown2);
+    font-size: 18px; 
+    height: 1em;
+}
+form select{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form button{
+    align-self: flex-end;
+}
+footer{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, var(--brown1), var(--brown2));
+}
+footer p{
+       color: var(--brown4);
+}
+footer h4{
+    color: var(--orange3);
+}
+@media screen and (max-width: 768px){
+    main {
+        flex-direction: column;
+        height: 175vh;
+    }
+    main img{
+        width: 68%;
+    }
+    article .price{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 425px){
+    header nav ul li a{
+        font-size: 10px;
+    }
+    article .price{
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+        height: 175vh;
+    }
+    main img{
+        width: 88%;
+    }
+    figure{
+        padding: 60px;
+        background-color: var(--brown6);
+    }
+    figure h1{
+        font-size: 30px;
+    }
+    .form{
+        gap: 0;
+    }
+    form .space{
+        text-align: center;
+        margin: 1.5em 1em;
+    }
+    form .space input, select{
+        width: 18em;
+    }
+    form .space select{
+        color: var(--brown1);
+        width: 16.6em;
+    }
+    
+    form select option{
+        color: var(--brown1);
+    }
+    form select{
+        color: var(--brown1);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    footer img{
+        padding-bottom: 1.8em;
+    }
+     footer{
+        text-align: center;
+     }
+     footer h4{
+        padding-top: 1.2em;
+     }
+}
+@media screen and (max-width: 375px){
+    main {
+        flex-direction: column;
+        height: 175vh;
+    }
+    main img{
+        width: 98%;
+    }
+    header img{
+        width: 120px;
+    }
+    aside h1{
+        font-size: 38px;
+    }
+    aside .services{
+        text-align: center;
+        width: 250px;
+        padding: 28px;
+    }
+    aside .services h1{
+        font-size: 21px;
+    }
+    aside .services p{
+        font-size: 18px;         
+    }
+    article .price h1{
+        font-size: 17px;
+    }
+    figure h1{
+        font-size: 28px;
+    }
+    form .space input, select{
+        width: 14em;
+    }
+    form .space select{
+        color: var(--brown1);
+        width: 12.6em;
+    }
+    main h1{
+        font-family: Constantia;
+        text-transform: uppercase;
+        font-size: 60px;
+        color: var(--orange2);
+        letter-spacing: 16px;
+        font-weight: bold;
+    }
+    main p{
+        margin-top: 18px;
+        font-size: 21px;
+        font-weight: normal;
+        font-family: Tahoma;
+    }
+    main button{
+        margin-top: 3rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 15px;
+        width: 60%;
+        color: var(--white);
+        font-weight: 700;
+        padding: 18px;
+        background-color: var(--orange1);
+    }
+    main button:nth-child(2){
+        margin-left: .5em;
+        width: 35%;
+        background-color: var(--brown1);
+    }
+    
+
+}
+@media screen and (max-width: 375px){
+    figure h1{
+        font-size: 20px;
+    }
+    main {
+        flex-direction: column;
+        height: 165vh;
+    }
+    main img{
+        width: 16em;
+    }
+    header img{
+        width: 6em;
+    }
+    header nav ul li a{
+        font-size: 10px;
+    }
+    main h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    main p{
+        text-align: center;
+        font-size: 16px;
+    }
+    main button{
+        width: 14em;
+    }
+    main button:nth-child(2){
+        width: 10em;
+        margin-top: .5em;
+        margin-left: 2em;
+    }
+    article h1{
+        margin-left: -.5em;
+        text-align: center;
+    }
+    figure h1{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+
+}
